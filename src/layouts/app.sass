@@ -37,6 +37,34 @@ nav
       width: 100%
       height: 70px
 
+.nav-wrapper
+    position: fixed
+    left: -6rem
+    bottom: 50%
+    transform: rotate(-90deg)
+    background: $white
+    a
+      padding: 0 1rem
+      text-decoration: none
+      color: $blue
+      display: inline-block
+      &:after
+        display: block
+        content: ''
+        border-bottom: 2px solid $blue
+        transform: scaleX(0)
+        transition: transform .2s ease-in-out
+      &:hover
+          &:after
+            transform: scaleX(1)
+
+.line
+    position: fixed
+    width: 2px
+    height: 100%
+    background: $blue
+    left: 1.4rem
+
 .logo
   max-width: 70px
 
@@ -97,6 +125,10 @@ footer
     background: $blue
     color: $white
 
+// About
+.content
+  text-align: center
+
 // Form
 .contact-form
   display: block
@@ -135,13 +167,17 @@ footer
   max-width: 100px
   position: relative
   background: transparent
-  background: none
-  transition: box-shadow 0.2s ease
+  background: $blue
+  border: 2px solid $blue
+  color: $white
+  transition: all 0.2s ease
   cursor: pointer
   text-align: center
   display: block
   margin: 0 auto
   padding: 0.7rem
+  font-size: 0.9rem
+  font-weight: 500
   &:hover
     box-shadow: 0px 0px transparent
     box-shadow: none
@@ -162,8 +198,6 @@ textarea:focus,
 button:focus
     outline: none
 
-
-
 @media (max-width: 509px)
   h1
     font-size: 15vw
@@ -180,3 +214,17 @@ button:focus
     margin: 0 auto
     input, textarea
       max-width: 290px
+
+  .line
+    bottom: 1.6rem
+    right: 0
+    height: 2px
+    width: 100%
+    left: 0
+
+  .nav-wrapper
+    transform: none
+    bottom: 0.9rem
+    left: 50%
+    transform: translateX(-50%)
+    width: 15rem

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
+import Nav from '../components/Nav'
 import Header from '../components/Header'
 import favicon from '../pages/images/favicon.ico'
 import './app.sass'
@@ -16,6 +16,7 @@ const Layout = ({ children, data }) => (
       ]}
       link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
     />
+    <Nav />
     <Header siteTitle={data.site.siteMetadata.title} />
     <div
       style={{
