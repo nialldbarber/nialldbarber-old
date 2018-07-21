@@ -10,6 +10,21 @@ body
   margin: 0
   box-sizing: border-box
   font-family: $titleFont
+  min-height: 100vh
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: rgba(255,255,255,0.5)
+    z-index: 0
+
+
+#tile-4-particles
+  z-index: 0
 
 #root
   min-height: 100vh
@@ -68,6 +83,7 @@ nav
 
 .logo
   max-width: 70px
+  z-index: 4
 
 .menu
   display: flex;
@@ -107,6 +123,7 @@ footer
   top: 50%
   transform: translate(-50%, -50%)
   width: 100vw
+  z-index: 4
   a
     text-align: center
     display: block
@@ -133,6 +150,7 @@ footer
 // About
 .content
   text-align: center
+  z-index: 4
 
 // Form
 .contact-form
@@ -226,6 +244,7 @@ button:focus
     height: 2px
     width: 100%
     left: 0
+    z-index: 4
 
   .nav-wrapper
     transform: none
