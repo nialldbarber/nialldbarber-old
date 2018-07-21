@@ -43,6 +43,7 @@ nav
     bottom: 50%
     transform: rotate(-90deg)
     background: $white
+    z-index: 9
     a
       padding: 0 1rem
       text-decoration: none
@@ -101,6 +102,11 @@ footer
 
 // Homepage
 .home
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 100vw
   a
     text-align: center
     display: block
