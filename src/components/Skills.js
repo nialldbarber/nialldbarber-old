@@ -16,6 +16,7 @@ export default class Skills extends Component {
             'Photoshop',
             'Illustrator',
             'After Effects',
+            'test',
           ]}
           typeSpeed={40}
           backSpeed={50}
