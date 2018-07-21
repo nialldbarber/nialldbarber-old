@@ -5,9 +5,34 @@ const Nav = ({ siteTitle }) => (
   <div>
     <div className="line" />
     <div className="nav-wrapper">
-      <Link to="/">Home</Link>
-      <Link to="/About">About</Link>
-      <Link to="/Contact">Contact</Link>
+      <Link
+        exact
+        to="/"
+        activeStyle={{
+          borderBottomWidth: 1,
+          borderBottomColor: 'black',
+        }}
+      >
+        Home
+      </Link>
+      <Link
+        to="/About"
+        activeStyle={{
+          borderBottomWidth: 1,
+          borderBottomColor: 'black',
+        }}
+      >
+        About
+      </Link>
+      <Link
+        to="/Contact"
+        activeStyle={{
+          borderBottomWidth: 1,
+          borderBottomColor: 'black',
+        }}
+      >
+        Contact
+      </Link>
     </div>
   </div>
 )
