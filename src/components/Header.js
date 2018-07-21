@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../../public/static/logo-inverse.svg'
+import logo from '../pages/images/logo-inverse.svg'
 
 const Header = ({ siteTitle }) => (
   <nav>
