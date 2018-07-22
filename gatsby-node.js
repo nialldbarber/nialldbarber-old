@@ -4,11 +4,11 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === 'build-html') {
-    config.loader('null', {
-      test: /reactparticles/,
-      loader: 'null-loader',
-    })
-  }
-}
+// exports.modifyWebpackConfig = ({ config, stage }) => {
+//   if (stage === 'build-html') {
+//     config.loader('null', {
+//       test: /reactparticles/,
+//       loader: 'null-loader',
+//     })
+//   }
+// }
